@@ -2,44 +2,50 @@
 <body>
 	<div id='background'>
         <div id='character' style='position:absolute; top:100px; left:450px; background-image: url("img/down1.png"); width:59px; height:86px;'></div>
-      <div id='character2' style='position:absolute; top:100px; left:450px; background-image: url("img/down1.png"); width:59px; height:86px;'></div>
-</div>
+    </div>
     <script type="text/javascript">
-	    var leftValuep1 = 450, topValuep1 = 100;
-		var leftValuep2 = 450, topValuep2 = 100;
-    	
-		
-		function update(){
-    		document.getElementById("character").style.left = leftValuep1+"px";
-    		document.getElementById("character").style.top = topValuep1+"px";
+	    var leftValue = 450, topValue = 100;
 
-		
-    	
-    		document.getElementById("character2").style.left = leftValuep2+"px";
-    		document.getElementById("character2").style.top = topValuep2+"px";
-		}
-		
+    	function update(){
+    		document.getElementById("character").style.left = leftValue+"px";
+    		document.getElementById("character").style.top = topValue+"px";
+    	}
 
     	document.onkeydown = function(e){
     		console.log(e);
     		if(e.keyCode == 37) { // LEFT
-    			leftValuep1 = leftValuep1 - 10;
+    			leftValue = leftValue - 10;
     		}
     		else if (e.keyCode == 39) { // RIGHT
-    			leftValuep1 = leftValuep1 + 10;    		
+    			leftValue = leftValue + 10;    		
     		}
     		else if (e.keyCode == 40) { // DOWN
 				topValue = topValue + 10;
     		}
 			else if (e.keyCode == 38) { // DOWN
-				topValuep1 = topValuep1 - 10;
+				topValue = topValue - 10;
     		}
-            if(e.keyCode ==68) { // LEFT
-    			leftValuep2 = leftValuep2 - 10;
-    		}
-    		else if (e.keyCode == 65) { // RIGHT
-    			leftValuep2 = leftValuep2 + 10;    		
-    		}
+    		// ...
+    		update();
+    	}
+    </script>
+</body>
+</html><html>
+    <body>
+        <div id="background" style="width: 1800px; height: 800px; background-image: url('img/white_bg.jpg');">
+         
+        </div>
+
+
+<script type="text/javascript">
+	var leftValue = 150;
+	var topValue = 150;
+	var walkValue = 1;
+	document.onkeydown = function(e){
+		console.log(e);
+		if (walkValue == 1){
+			walkValue = 2;
+		}
     		else if (e.keyCode == 87) { // top
 				topValuep2 = topValuep2 + 10;
     		}
