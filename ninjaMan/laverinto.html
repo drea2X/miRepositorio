@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ninjaMan</title>
+        <style type="text/css">
+            *{
+                margin: 40;
+                padding: 40;
+            }
+            .row {
+                line-height: 0;
+            }
+
+            .wall {
+                background-color: rgb(51, 29, 102);
+                height: 80px;
+                width: 80px;
+                display: inline-block;
+            }
+            .sushi {
+                background-color: rgba(0, 0, 0, 0.822);
+                height: 80px;
+                width: 80px;
+                display: inline-block;
+                background-image: url(/ninjaMan/img/sushi.png);
+                background-size: contain;
+            }
+            .blank {
+                background-color: aqua;
+                height: 80px;
+                width: 80px;
+                display: inline-block;
+            }
+            #ninjaman {
+                background-color: black;
+                height: 80px;
+                width: 80px;
+                display: inline-block;
+                background-image: url(/ninjaMan/img/ninja.gif);
+                background-size: contain;
+                position: absolute;
+                left: 80px;
+                top: 80px;
+            }
+            </style>
+    </head>
+    <body>
+        <div id='word'>
+            <div class = 'row'>
+                <div class= 'wall'></div>
+                <div class= 'wall'></div>
+                <div class= 'wall'></div>
+                <div class= 'wall'></div>
+                <div class= 'wall'></div>
+                <div class= 'wall'></div>
+                <div class= 'wall'></div>
+            </div>
+                <div class='row'>
+                <div class= 'wall'></div>
+                <div class= 'sushi'></div>
+                <div class= 'wall'></div>
+                <div class= 'sushi'></div>
+                <div class= 'wall'></div>
+                <div class= 'sushi'></div>
+                <div class= 'wall'></div>
+             </div>
+            <div class='row'>
+                <div class= 'wall'></div>
+                <div class= 'sushi'></div>
+                <div class= 'wall'></div>
+                <div class= 'sushi'></div>
+                <div class= 'wall'></div>
+                <div class= 'sushi'></div>
+                <div class= 'wall'></div>
+            </div>
+            <div class='row'>
+                <div class= 'wall'></div>
+                <div class= 'sushi'></div>
+                <div class= 'wall'></div>
+                <div class= 'sushi'></div>
+                <div class= 'wall'></div>
+                <div class= 'sushi'></div>
+                <div class= 'wall'></div>
+            </div>
+            <div class='row'>
+                <div class= 'wall'></div>
+                <div class= 'sushi'></div>
+                <div class= 'wall'></div>
+                <div class= 'sushi'></div>
+                <div class= 'wall'></div>
+                <div class= 'sushi'></div>
+                <div class= 'wall'></div>
+            </div>
+            <div class='row'>
+                <div class= 'wall'></div>
+                <div class= 'sushi'></div>
+                <div class= 'wall'></div>
+                <div class= 'sushi'></div>
+                <div class= 'wall'></div>
+                <div class= 'sushi'></div>
+                <div class= 'wall'></div>
+           </div>
+            <div class='row'>
+                <div class= 'wall'></div>
+                <div class= 'wall'></div>
+                <div class= 'wall'></div>
+                <div class= 'wall'></div>
+                <div class= 'wall'></div>
+                <div class= 'wall'></div>
+                <div class= 'wall'></div>
+                </div>
+            </div>
+        
+            <div id='ninjaman'></div>
+</body>
+<script type="text/javascript">
+    var word = [
+        [1,1,1,1,1]
+        [1,0,2,2,1]
+        [1,2,1,2,1]
+        [1,1,1,1,1]
+];
+
+    
+    var wordDict = {
+        0: 'blank'
+        1: 'wall'
+        2: 'sushi'
+    }
+
+    function drawWorld(){
+        output = "";
+        for(var row = 0; row <world.length; row++){
+            output += "<div class = 'row'></div>"
+        }
+        document.getElementById('world').innerHTML =arguments
+        output;
+    }
+</script>
+</html>
