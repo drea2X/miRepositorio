@@ -1,0 +1,80 @@
+body{
+
+background-color: rgb(255, 255, 255);
+
+}
+
+
+h1 {
+    color: rgb(53, 17, 90);
+    font-size: 50px;
+
+    
+}
+p{
+text-align: center;
+
+}
+.is-centered {
+    text-align: center;
+}
+.is-red {
+    color: red;
+}
+#game {
+    width: 320px;
+    height: 240px;
+    overflow: hidden;
+    background: linear-gradient(#1293f5, #bae8ff 80%, #35b236 80%);
+}
+#player {
+    margin-top: 140px;
+    margin-left: 50px;
+}
+/* No te preocupes por saber cuáles son todas estas propiedades todavía */
+/* volveremos a ellas más tarde, ¡lo prometemos! */
+
+
+h1 {
+    color: rebeccapurple !important;
+}
+.green {
+    color: mediumseagreen !important;
+}
+#red {
+        color: tomato;
+    }
+    
+    .quote p {
+        color: darkslategrey;
+        font-style: italic;
+
+    }
+    .header > img {
+        height: 50px;
+    }
+    
+    input {
+        padding: 5px;
+        border-color: rebeccapurple;
+    }
+    input[type="text"] {
+        border: none;
+        border-bottom: 2px solid rebeccapurple;
+    }
+    input[type="submit"] {
+        color: white;
+        background-color: rebeccapurple;
+    }
+    
+
+    h1 {
+        color: cyan;
+        background-color: grey;
+        text-align: center;
+      }
+      
+
+
+
+
