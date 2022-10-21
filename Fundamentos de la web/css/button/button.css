@@ -1,0 +1,23 @@
+.boton1{
+    background-color:rgb(255, 255, 255) ;
+    color: aqua ;
+    height: 25px;
+    width: 100px;
+    border-radius: 50cm;
+    border-color:aqua;
+}
+.boton2{
+    background-color:cyan ;
+    color: rgb(252, 252, 252) ;
+    height: 25px;
+    width: 25px;
+    border-radius: 50cm;
+    border-color: aqua;
+}
+.boton3{
+    background-color:blue;
+    color: rgb(255, 255, 255) ;
+    height: 25px;
+    width: 150px;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 15px 15px;
